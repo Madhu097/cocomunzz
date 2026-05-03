@@ -637,7 +637,7 @@ body {
   display: block;
   width: 26px;
   height: 2.5px;
-  background: var(--creama);
+  background: var(--grove);
   border-radius: 4px;
   transform-origin: center;
 }
@@ -753,7 +753,9 @@ body {
 
 @media (max-width: 640px) {
   /* Navbar */
-  .navbar-ref { padding: 14px 32px; }
+  .navbar-ref { padding: 10px 24px; }
+  .navbar-logo-ref img { height: 45px !important; }
+  .navbar-logo-ref span { font-size: 1.2rem !important; }
 
   /* Hero */
   .hero { padding: 90px 32px 50px; gap: 40px; }
