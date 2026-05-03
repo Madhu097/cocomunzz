@@ -3,17 +3,17 @@ import { asset } from '../utils/assetPath'
 
 const HaloSwash = () => (
   <svg className="hero-swash swash-halo" viewBox="0 0 200 100" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <path d="M20 50C20 30 180 30 180 50C180 70 20 70 20 50Z" stroke="#99432B" strokeWidth="4" strokeDasharray="8 8" opacity="0.6" />
-    <path d="M40 30C80 10 120 10 160 30" stroke="#E8CEA7" strokeWidth="3" strokeLinecap="round" />
-    <line x1="100" y1="5" x2="100" y2="25" stroke="#99432B" strokeWidth="3" strokeLinecap="round" />
-    <line x1="130" y1="10" x2="120" y2="25" stroke="#99432B" strokeWidth="3" strokeLinecap="round" />
-    <line x1="70" y1="10" x2="80" y2="25" stroke="#99432B" strokeWidth="3" strokeLinecap="round" />
+    <path d="M20 50C20 30 180 30 180 50C180 70 20 70 20 50Z" stroke="#8E321F" strokeWidth="4" strokeDasharray="8 8" opacity="0.6" />
+    <path d="M40 30C80 10 120 10 160 30" stroke="#E8D5B5" strokeWidth="3" strokeLinecap="round" />
+    <line x1="100" y1="5" x2="100" y2="25" stroke="#8E321F" strokeWidth="3" strokeLinecap="round" />
+    <line x1="130" y1="10" x2="120" y2="25" stroke="#8E321F" strokeWidth="3" strokeLinecap="round" />
+    <line x1="70" y1="10" x2="80" y2="25" stroke="#8E321F" strokeWidth="3" strokeLinecap="round" />
   </svg>
 )
 
 const WavySwash = () => (
   <svg className="hero-swash swash-wavy" viewBox="0 0 200 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <path d="M10 20C30 10 50 30 70 20C90 10 110 30 130 20C150 10 170 30 190 20" stroke="#99432B" strokeWidth="6" strokeLinecap="round" />
+    <path d="M10 20C30 10 50 30 70 20C90 10 110 30 130 20C150 10 170 30 190 20" stroke="#8E321F" strokeWidth="6" strokeLinecap="round" />
   </svg>
 )
 
@@ -61,7 +61,7 @@ export default function Hero() {
             <svg width="150" height="150" viewBox="0 0 150 150">
               {Array.from({ length: 8 }).map((_, i) => 
                 Array.from({ length: 8 }).map((_, j) => (
-                  <circle key={`${i}-${j}`} cx={20 + i * 15} cy={20 + j * 15} r="2.5" fill="#E8CEA7" opacity="0.4" />
+                  <circle key={`${i}-${j}`} cx={20 + i * 15} cy={20 + j * 15} r="2.5" fill="#E8D5B5" opacity="0.4" />
                 ))
               )}
             </svg>

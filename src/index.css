@@ -10,14 +10,14 @@
 }
 
 :root {
-  --leaf: #6F7147;
-  --andhra-clay: #99432B;
-  --creama: #E8CEA7;
-  --grove: #141E18;
-  --coir: #59251F;
-  --cacao-bark: #350A0A;
+  --leaf: #B85C38; /* Clay Orange */
+  --andhra-clay: #8E321F; /* Deep Terracotta */
+  --creama: #E8D5B5; /* Warm Beige */
+  --grove: #1A0B0B; /* Near Black Brown */
+  --coir: #5D2014; /* Deep Brown Red */
+  --cacao-bark: #2C1212; /* Dark Chocolate */
   --white: #FFFFFF;
-  --light-bg: #F5F0E8;
+  --light-bg: #F5E8D6; /* Lightest Beige */
   --font-main: 'Aquatic', 'Pacifico', cursive;
   --font-body: 'Archivo', sans-serif;
   --transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
