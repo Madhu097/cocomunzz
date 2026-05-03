@@ -10,14 +10,14 @@
 }
 
 :root {
-  --leaf: #B85C38; /* Clay Orange */
-  --andhra-clay: #8E321F; /* Deep Terracotta */
-  --creama: #E8D5B5; /* Warm Beige */
-  --grove: #1A0B0B; /* Near Black Brown */
-  --coir: #5D2014; /* Deep Brown Red */
-  --cacao-bark: #2C1212; /* Dark Chocolate */
+  --leaf: #C66445; /* Rosy Copper */
+  --andhra-clay: #99432A; /* Reddish Brown */
+  --creama: #FBF3E0; /* Ivory Mist */
+  --grove: #1A0B0B; /* Keeping dark for text/contrast */
+  --coir: #5D2014; 
+  --cacao-bark: #2C1212;
   --white: #FFFFFF;
-  --light-bg: #F5E8D6; /* Lightest Beige */
+  --light-bg: #FBF3E0;
   --font-main: 'Aquatic', 'Pacifico', cursive;
   --font-body: 'Archivo', sans-serif;
   --transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
@@ -67,7 +67,7 @@ body {
   text-align: center;
   padding: 8px 0;
   font-size: 0.8rem;
-  font-weight: 500;
+  font-weight: 400;
   letter-spacing: 0.5px;
 }
 
@@ -81,14 +81,15 @@ body {
   align-items: center;
   justify-content: space-between;
   padding: 20px 60px;
-  background: var(--grove);
+  background: var(--creama);
+  border-bottom: 1px solid rgba(0,0,0,0.05);
 }
 
 .navbar-logo-ref {
   display: flex;
   align-items: center;
   gap: 12px;
-  color: var(--white);
+  color: var(--grove);
   font-size: 1.1rem;
   font-weight: 400;
   text-decoration: none;
@@ -116,7 +117,7 @@ body {
 }
 
 .navbar-links-ref a {
-  color: var(--white);
+  color: var(--grove);
   text-decoration: none;
   font-size: 0.95rem;
   font-weight: 400;
@@ -129,14 +130,14 @@ body {
   padding: 10px 24px;
   border-radius: 50px;
   border: none;
-  font-weight: 600;
+  font-weight: 400;
   font-size: 0.9rem;
   cursor: pointer;
 }
 
 /* Hero Section */
 .hero {
-  background: var(--grove);
+  background: var(--creama);
   min-height: 100vh;
   display: flex;
   align-items: center;
@@ -156,7 +157,7 @@ body {
 
 .hero-title-main {
   font-family: var(--font-main);
-  color: var(--creama);
+  color: var(--grove);
   font-size: clamp(2.8rem, 5.5vw, 4.5rem);
   line-height: 1.1;
   margin-bottom: 30px;
@@ -184,7 +185,7 @@ body {
 }
 
 .hero-desc {
-  color: rgba(255, 255, 255, 0.8);
+  color: rgba(0, 0, 0, 0.7);
   font-size: 1.1rem;
   max-width: 500px;
   margin-bottom: 50px;
@@ -192,12 +193,12 @@ body {
 }
 
 .hero-btn-ref {
-  background: var(--creama);
-  color: var(--grove);
+  background: var(--leaf);
+  color: var(--white);
   padding: 16px 42px;
   border-radius: 60px;
   border: none;
-  font-weight: 700;
+  font-weight: 400;
   font-size: 1rem;
   cursor: pointer;
   transition: var(--transition);
