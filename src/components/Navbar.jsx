@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import { asset } from '../utils/assetPath'
+import logoImg from '../assets/Logo.png'
 
 export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false)
@@ -44,9 +45,8 @@ export default function Navbar() {
         transition={{ duration: 0.6 }}
       >
         {/* Logo */}
-        <a href="#home" className="navbar-logo-ref" onClick={closeMenu} style={{ display: 'flex', alignItems: 'center', gap: '15px' }}>
-          <img src={asset('images/Logo.png')} alt="Cocomunzzz Logo" style={{ height: '65px', width: 'auto' }} />
-          <span style={{ fontSize: '1.7rem', fontWeight: '400', fontFamily: 'var(--font-main)', color: 'var(--grove)' }}>Cocomunzz</span>
+        <a href="#home" className="navbar-logo-ref" onClick={closeMenu} style={{ display: 'flex', alignItems: 'center' }}>
+          <img src={logoImg} alt="Cocomunzz Logo" style={{ height: '50px', width: 'auto' }} />
         </a>
 
         {/* Right side Container */}

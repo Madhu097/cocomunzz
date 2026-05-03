@@ -3,9 +3,12 @@ import { asset } from '../utils/assetPath'
 
 export default function Hero() {
   return (
-    <section className="hero" id="home">
-      <div className="bg-element" style={{ bottom: '-50px', left: '-50px', width: '400px', opacity: 0.15 }}>
-        <img src={asset('images/elements/1.png')} alt="" />
+    <section className="hero" id="home" style={{ position: 'relative' }}>
+      <div className="bg-element" style={{ bottom: '-50px', left: '-60px', width: '400px', opacity: 0.15, margin: 0 }}>
+        <img src={asset('images/elements/1.png')} alt="" style={{ margin: 0, display: 'block' }} />
+      </div>
+      <div className="bg-element" style={{ top: '-50px', right: '-60px', width: '300px', opacity: 0.15, margin: 0 }}>
+        <img src={asset('images/elements/2.png')} alt="" style={{ margin: 0, display: 'block' }} />
       </div>
       <motion.div 
         className="hero-content"

@@ -3,12 +3,9 @@ import { asset } from '../utils/assetPath'
 
 export default function Contact() {
   return (
-    <section className="contact-section" id="contact" style={{ position: 'relative', overflow: 'hidden' }}>
-      <div className="bg-element" style={{ bottom: '-30px', left: '-50px', width: '300px', opacity: 0.1 }}>
-        <img src={asset('images/elements/2.png')} alt="" />
-      </div>
-      <div className="bg-element" style={{ top: '5%', right: '10%', width: '150px', opacity: 0.08, transform: 'rotate(45deg)' }}>
-        <img src={asset('images/elements/4.png')} alt="" />
+    <section className="contact-section" id="contact" style={{ position: 'relative' }}>
+      <div className="bg-element" style={{ top: '5%', right: '-60px', width: '150px', opacity: 0.08, margin: 0 }}>
+        <img src={asset('images/elements/2.png')} alt="" style={{ margin: 0, display: 'block' }} />
       </div>
 
       <motion.div 
@@ -51,20 +48,26 @@ export default function Contact() {
         transition={{ duration: 0.6 }}
         viewport={{ once: true }}
       >
-        <form className="contact-form" onSubmit={(e) => e.preventDefault()}>
+        <form className="contact-form" action="https://formsubmit.co/madhukuruva20@gmail.com" method="POST">
+          {/* Honeypot field for spam prevention */}
+          <input type="text" name="_honey" style={{ display: 'none' }} />
+          {/* Disable Captcha to keep it clean, optional but helpful */}
+          <input type="hidden" name="_captcha" value="false" />
+          
           <div className="form-group">
-            <input type="text" placeholder="Your Name" />
+            <input type="text" name="name" placeholder="Your Name" required />
           </div>
           <div className="form-group">
-            <input type="email" placeholder="Your Email" />
+            <input type="email" name="email" placeholder="Your Email" required />
           </div>
           <div className="form-group">
-            <input type="text" placeholder="Subject" />
+            <input type="text" name="subject" placeholder="Subject" required />
           </div>
           <div className="form-group">
-            <textarea placeholder="Your Message" rows="5"></textarea>
+            <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
           </div>
           <motion.button 
+            type="submit"
             className="submit-btn"
             whileHover={{ scale: 1.02, backgroundColor: "#5a5c39" }}
             whileTap={{ scale: 0.98 }}

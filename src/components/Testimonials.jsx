@@ -3,34 +3,34 @@ import { asset } from '../utils/assetPath'
 
 const reviews = [
   {
-    name: 'Rahul M.',
-    initial: 'R',
-    stars: 5,
-    text: '"The croissants here are incredible — crispy, flaky, and buttery. Coffee is consistently great. A cozy spot to start the day!"',
-  },
-  {
-    name: 'Amira S.',
-    initial: 'A',
-    stars: 5,
-    text: '"I drive 20 minutes just for their cupcakes — worth every single bite. The staff is kind and the vibe is so welcoming."',
-  },
-  {
-    name: 'Kevin L.',
+    name: 'Kiranendra Vivek Kolli',
     initial: 'K',
     stars: 5,
-    text: '"Top-notch, from the morning pastries to the evening treats. Everything is freshly baked and you can truly taste the difference."',
+    text: '"I loved the food and it\'s quality and of course it\'s authenticity. It was awesome 👌. I recommend people to try out at this place."',
+  },
+  {
+    name: 'Abhi Frank',
+    initial: 'A',
+    stars: 5,
+    text: '"A Hidden Gem for Coconut Lovers & Minimalist Aesthetics!. From the moment I stepped in, I was impressed by the calming ambiance and clean, minimalistic design. The coconut-based offerings are the real highlight here—delicious, natural, and beautifully presented. If you’re looking for a chill spot with great vibes and even better coconut treats, this café is a must-visit!"',
+  },
+  {
+    name: 'Aishwarya Nagula',
+    initial: 'A',
+    stars: 5,
+    text: '"You must try everything here. What a fun way to hero coconut which is so readily available and accessible to us here in Andhra! There has not been one thing here that I’ve tried and not liked. The gelato is out of this world!!!!! Also, COCONUTS about the Vietnamese iced coffee! 🤌🏾🤌🏾🤌🏾🤌🏾✨✨✨✨⚡️⚡️⚡️⚡️"',
   },
 ]
 
 export default function Testimonials() {
   return (
-    <section className="testimonials" style={{ position: 'relative', overflow: 'hidden' }}>
+    <section className="testimonials" style={{ position: 'relative' }}>
       {/* Moved elements to corners to avoid overlapping title */}
-      <div className="bg-element" style={{ top: '10%', left: '-50px', width: '280px', opacity: 0.07 }}>
-        <img src={asset('images/elements/3.png')} alt="" />
+      <div className="bg-element" style={{ top: '10%', left: '-60px', width: '280px', opacity: 0.07, margin: 0 }}>
+        <img src={asset('images/elements/5.png')} alt="" style={{ margin: 0, display: 'block' }} />
       </div>
-      <div className="bg-element" style={{ bottom: '-40px', right: '-30px', width: '220px', opacity: 0.07, transform: 'rotate(10deg)' }}>
-        <img src={asset('images/elements/5.png')} alt="" />
+      <div className="bg-element" style={{ bottom: '-40px', right: '-60px', width: '220px', opacity: 0.07, margin: 0 }}>
+        <img src={asset('images/elements/3.png')} alt="" style={{ margin: 0, display: 'block' }} />
       </div>
 
       <div className="section-header" style={{ position: 'relative', zIndex: 2 }}>

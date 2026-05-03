@@ -3,12 +3,9 @@ import { asset } from '../utils/assetPath'
 
 export default function About() {
   return (
-    <section className="about-section" id="about" style={{ position: 'relative', overflow: 'hidden' }}>
-      <div className="bg-element" style={{ top: '10%', right: '-50px', width: '350px', opacity: 0.12 }}>
-        <img src={asset('images/elements/5.png')} alt="" />
-      </div>
-      <div className="bg-element" style={{ bottom: '10%', left: '5%', width: '120px', opacity: 0.1 }}>
-        <img src={asset('images/elements/6.png')} alt="" />
+    <section className="about-section" id="about" style={{ position: 'relative' }}>
+      <div className="bg-element" style={{ top: '10%', right: '-60px', width: '350px', opacity: 0.12, margin: 0 }}>
+        <img src={asset('images/elements/2.png')} alt="" style={{ margin: 0, display: 'block' }} />
       </div>
 
       <motion.div 
@@ -18,7 +15,7 @@ export default function About() {
         transition={{ duration: 0.8 }}
         viewport={{ once: true }}
       >
-        <img src={asset('images/about-bakery-1.png')} alt="Cocomunzz Cafe" className="about-img" />
+        <img src={asset('images/about_cocomunzz_1777830741247.png')} alt="Cocomunzz Cafe" className="about-img" />
       </motion.div>
 
       <motion.div 

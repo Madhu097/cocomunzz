@@ -1,33 +1,46 @@
 import { motion } from 'framer-motion'
 import { asset } from '../utils/assetPath'
 
+import img1 from '../assets/products/vietnamese cold coffee.jpg'
+import img2 from '../assets/products/coco almond cookies.jpg'
+import img3 from '../assets/products/TENDER COCONUT KISS.jpg'
+import img4 from '../assets/products/BISCOFF AFFAGATO copy.jpg'
+
 const menuItems = [
-  { img: asset('images/espresso-creations.png'), title: 'Coconut Coffee Range' },
-  { img: asset('images/signature-cupcakes.png'), title: 'Coconut Pudding' },
-  { img: asset('images/brunch-treats.png'), title: 'Coconut Gelato' },
+  { img: img1, title: 'Vietnamese Coconut Coffee' },
+  { img: img2, title: 'Coco Almond Cookies' },
+  { img: img3, title: 'Tender Coconut Kiss Shake' },
+  { img: img4, title: 'Coconut Affogato' },
 ]
 
 export default function MenuHighlights() {
   return (
-    <section className="menu-section" id="menu" style={{ position: 'relative', overflow: 'hidden' }}>
-      <div className="bg-element" style={{ top: '-30px', left: '10%', width: '150px', opacity: 0.1, transform: 'rotate(-10deg)' }}>
-        <img src={asset('images/elements/6.png')} alt="" />
-      </div>
-      <div className="bg-element" style={{ bottom: '-50px', right: '5%', width: '300px', opacity: 0.1 }}>
-        <img src={asset('images/elements/3.png')} alt="" />
+    <section className="menu-section" id="menu" style={{ position: 'relative' }}>
+      <div className="bg-element" style={{ bottom: '-50px', right: '-60px', width: '300px', opacity: 0.1, margin: 0 }}>
+        <img src={asset('images/elements/3.png')} alt="" style={{ margin: 0, display: 'block' }} />
       </div>
 
       <div className="section-header">
-        <motion.h2 
-          className="section-title"
-          initial={{ opacity: 0, x: -30 }}
-          whileInView={{ opacity: 1, x: 0 }}
-          viewport={{ once: true }}
-          style={{ fontSize: '2.5rem', lineHeight: '1.2' }}
-        >
-          A few creations that have made<br />
-          Cocomunzz impossible to forget.
-        </motion.h2>
+        <div style={{ display: 'flex', flexDirection: 'column', gap: '15px' }}>
+          <motion.h2 
+            className="section-title"
+            initial={{ opacity: 0, x: -30 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+            style={{ fontSize: '3rem', lineHeight: '1.2' }}
+          >
+            Menu Highlights
+          </motion.h2>
+          <motion.p
+            initial={{ opacity: 0, x: -30 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ delay: 0.2 }}
+            viewport={{ once: true }}
+            style={{ fontSize: '1.2rem', color: '#666', lineHeight: '1.6', fontFamily: 'var(--font-body)' }}
+          >
+            A few creations that have made cocomunzz impossible to forget.
+          </motion.p>
+        </div>
         <a href="#" className="view-all">View Full Menu →</a>
       </div>
 
