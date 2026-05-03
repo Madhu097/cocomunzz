@@ -24,10 +24,10 @@ export default function Footer() {
         <div className="footer-contact-info">
           <span>+91 78160 28882</span>
           <span style={{ margin: '0 15px' }}>•</span>
-          <span>hello@cocomunzzz.com</span>
+          <span>hello@cocomunzz.com</span>
         </div>
         <div className="footer-copyright" style={{ fontSize: '0.75rem' }}>
-          &copy; 2026 Cocomunzzz. All rights reserved.
+          &copy; 2026 Cocomunzz. All rights reserved.
         </div>
       </div>
     </footer>
