@@ -53,23 +53,14 @@ export default function Navbar() {
           <span>Cocomunzzz</span>
         </a>
 
-        {/* Desktop Links */}
-        <ul className="navbar-links-ref desktop-only">
-          {links.map(l => (
-            <li key={l.label}><a href={l.href}>{l.label}</a></li>
-          ))}
-        </ul>
-
-        {/* Right side */}
+        {/* Right side Container */}
         <div className="navbar-right-ref">
-          <motion.a
-            href="#contact"
-            className="navbar-cta-ref desktop-only"
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.95 }}
-          >
-            Order online
-          </motion.a>
+          {/* Desktop Links - Now inside the right side container */}
+          <ul className="navbar-links-ref desktop-only">
+            {links.map(l => (
+              <li key={l.label}><a href={l.href}>{l.label}</a></li>
+            ))}
+          </ul>
 
           {/* Hamburger */}
           <motion.button
@@ -121,17 +112,6 @@ export default function Navbar() {
                 {l.label}
               </motion.a>
             ))}
-            <motion.a
-              href="#contact"
-              className="mobile-cta"
-              custom={links.length}
-              variants={itemVariants}
-              initial="hidden"
-              animate="visible"
-              onClick={closeMenu}
-            >
-              Order online
-            </motion.a>
           </motion.div>
         )}
       </AnimatePresence>

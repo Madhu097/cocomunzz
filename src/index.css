@@ -57,7 +57,7 @@ body {
 .container {
   max-width: 1400px;
   margin: 0 auto;
-  padding: 0 40px;
+  padding: 0 80px;
 }
 
 /* Announcement Bar */
@@ -111,9 +111,7 @@ body {
   display: flex;
   gap: 40px;
   list-style: none;
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
+  margin-right: 30px;
 }
 
 .navbar-links-ref a {
@@ -141,7 +139,7 @@ body {
   min-height: 100vh;
   display: flex;
   align-items: center;
-  padding: 100px 80px;
+  padding: 100px 120px;
   position: relative;
   overflow: hidden;
 }
@@ -268,7 +266,7 @@ body {
 
 /* Menu Section */
 .menu-section {
-  padding: 100px 60px;
+  padding: 100px 120px;
   background: var(--light-bg);
 }
 
@@ -338,7 +336,7 @@ body {
 
 /* About Section */
 .about-section {
-  padding: 120px 60px;
+  padding: 120px 120px;
   display: flex;
   align-items: center;
   gap: 80px;
@@ -480,7 +478,7 @@ body {
 
 /* Contact Section */
 .contact-section {
-  padding: 100px 60px 40px;
+  padding: 100px 120px 40px;
   background: var(--grove);
   display: flex;
   gap: 80px;
@@ -557,9 +555,9 @@ body {
 
 /* Footer */
 .footer {
-  padding: 40px 60px 30px;
-  background: #0d1410;
-  color: rgba(255,255,255,0.5);
+  padding: 60px 80px 40px;
+  background: var(--andhra-clay);
+  color: var(--creama);
 }
 
 .footer-top {
@@ -569,14 +567,14 @@ body {
 }
 
 .footer-logo {
-  color: var(--creama);
+  color: var(--white);
   font-size: 1.5rem;
   font-weight: 400;
   margin-bottom: 20px;
 }
 
 .footer-bottom {
-  border-top: 1px solid rgba(255,255,255,0.05);
+  border-top: 1px solid rgba(255,255,255,0.1);
   padding-top: 40px;
   display: flex;
   justify-content: space-between;
