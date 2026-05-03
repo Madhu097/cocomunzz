@@ -1,22 +1,6 @@
 import { motion } from 'framer-motion'
 import { asset } from '../utils/assetPath'
 
-const HaloSwash = () => (
-  <svg className="hero-swash swash-halo" viewBox="0 0 200 100" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <path d="M20 50C20 30 180 30 180 50C180 70 20 70 20 50Z" stroke="#99432A" strokeWidth="4" strokeDasharray="8 8" opacity="0.6" />
-    <path d="M40 30C80 10 120 10 160 30" stroke="#FBF3E0" strokeWidth="3" strokeLinecap="round" />
-    <line x1="100" y1="5" x2="100" y2="25" stroke="#99432A" strokeWidth="3" strokeLinecap="round" />
-    <line x1="130" y1="10" x2="120" y2="25" stroke="#99432A" strokeWidth="3" strokeLinecap="round" />
-    <line x1="70" y1="10" x2="80" y2="25" stroke="#99432A" strokeWidth="3" strokeLinecap="round" />
-  </svg>
-)
-
-const WavySwash = () => (
-  <svg className="hero-swash swash-wavy" viewBox="0 0 200 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <path d="M10 20C30 10 50 30 70 20C90 10 110 30 130 20C150 10 170 30 190 20" stroke="#99432A" strokeWidth="6" strokeLinecap="round" />
-  </svg>
-)
-
 export default function Hero() {
   return (
     <section className="hero" id="home">
@@ -30,9 +14,8 @@ export default function Hero() {
         <div className="hero-title-wrapper">
           <h1 className="hero-title-main">
             Built Around One<br />
-            <span className="title-highlight">Extraordinary<HaloSwash /></span><br />
+            <span className="title-highlight">Extraordinary</span><br />
             Fruit
-            <WavySwash />
           </h1>
         </div>
         <p className="hero-desc">
