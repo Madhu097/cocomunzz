@@ -7,9 +7,7 @@ export default function Hero() {
       <div className="bg-element" style={{ bottom: '-50px', left: '-60px', width: '400px', opacity: 0.15, margin: 0 }}>
         <img src={asset('images/elements/1.png')} alt="" style={{ margin: 0, display: 'block' }} />
       </div>
-      <div className="bg-element" style={{ top: '-50px', right: '-60px', width: '300px', opacity: 0.15, margin: 0 }}>
-        <img src={asset('images/elements/2.png')} alt="" style={{ margin: 0, display: 'block' }} />
-      </div>
+
       <motion.div 
         className="hero-content"
         initial={{ opacity: 0, x: -50 }}

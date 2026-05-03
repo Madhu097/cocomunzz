@@ -3,8 +3,8 @@ import { asset } from '../utils/assetPath'
 
 export default function About() {
   return (
-    <section className="about-section" id="about" style={{ position: 'relative' }}>
-      <div className="bg-element" style={{ top: '10%', right: '-60px', width: '350px', opacity: 0.12, margin: 0 }}>
+    <section className="about-section" id="about" style={{ position: 'relative', overflow: 'hidden' }}>
+      <div className="bg-element" style={{ bottom: '5%', right: '-60px', width: '350px', opacity: 0.12, margin: 0 }}>
         <img src={asset('images/elements/2.png')} alt="" style={{ margin: 0, display: 'block' }} />
       </div>
 

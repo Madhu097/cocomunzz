@@ -15,7 +15,7 @@ const menuItems = [
 
 export default function MenuHighlights() {
   return (
-    <section className="menu-section" id="menu" style={{ position: 'relative' }}>
+    <section className="menu-section" id="menu" style={{ position: 'relative', overflow: 'hidden' }}>
       <div className="bg-element" style={{ bottom: '-50px', right: '-60px', width: '300px', opacity: 0.1, margin: 0 }}>
         <img src={asset('images/elements/3.png')} alt="" style={{ margin: 0, display: 'block' }} />
       </div>

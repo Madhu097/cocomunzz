@@ -1,17 +1,47 @@
 import { motion } from 'framer-motion'
 import { asset } from '../utils/assetPath'
+import { useState } from 'react'
 
 export default function Contact() {
+  const [status, setStatus] = useState(''); // 'sending', 'success', 'error'
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    setStatus('sending');
+
+    const formData = new FormData(e.target);
+
+    try {
+      const response = await fetch("https://formsubmit.co/ajax/business@cocomunzzz.com", {
+        method: "POST",
+        body: formData
+      });
+
+      if (response.ok) {
+        setStatus('success');
+        e.target.reset();
+        setTimeout(() => setStatus(''), 5000);
+      } else {
+        const errorData = await response.json();
+        console.log("FormSubmit Error:", errorData);
+        setStatus('error');
+      }
+    } catch (error) {
+      console.log("Error", error);
+      setStatus('error');
+    }
+  };
+
   return (
-    <section className="contact-section" id="contact" style={{ position: 'relative' }}>
+    <section className="contact-section" id="contact" style={{ position: 'relative', overflow: 'hidden' }}>
       <div className="bg-element" style={{ top: '5%', right: '-60px', width: '150px', opacity: 0.08, margin: 0 }}>
         <img src={asset('images/elements/2.png')} alt="" style={{ margin: 0, display: 'block' }} />
       </div>
 
       <motion.div 
         className="contact-left"
-        initial={{ opacity: 0, y: 30 }}
-        whileInView={{ opacity: 1, y: 0 }}
+        initial={{ opacity: 0, x: -30 }}
+        whileInView={{ opacity: 1, x: 0 }}
         viewport={{ once: true }}
       >
         <h2>Quick Order /<br />Contact</h2>
@@ -30,7 +60,7 @@ export default function Contact() {
             <div className="contact-icon">
               <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
             </div>
-            <span>hello@cocomunzzz.com</span>
+            <span>business@cocomunzzz.com</span>
           </div>
           <div className="contact-item">
             <div className="contact-icon">
@@ -48,11 +78,10 @@ export default function Contact() {
         transition={{ duration: 0.6 }}
         viewport={{ once: true }}
       >
-        <form className="contact-form" action="https://formsubmit.co/madhukuruva20@gmail.com" method="POST">
-          {/* Honeypot field for spam prevention */}
-          <input type="text" name="_honey" style={{ display: 'none' }} />
-          {/* Disable Captcha to keep it clean, optional but helpful */}
-          <input type="hidden" name="_captcha" value="false" />
+        <form className="contact-form" onSubmit={handleSubmit}>
+          {/* Optional config for FormSubmit */}
+          <input type="hidden" name="_subject" value="New Cocomunzz Contact Form Submission!" />
+          <input type="hidden" name="_template" value="table" />
           
           <div className="form-group">
             <input type="text" name="name" placeholder="Your Name" required />
@@ -69,13 +98,31 @@ export default function Contact() {
           <motion.button 
             type="submit"
             className="submit-btn"
-            whileHover={{ scale: 1.02, backgroundColor: "#5a5c39" }}
+            disabled={status === 'sending'}
+            whileHover={{ scale: 1.02 }}
             whileTap={{ scale: 0.98 }}
+            style={{ 
+              opacity: status === 'sending' ? 0.7 : 1,
+              cursor: status === 'sending' ? 'not-allowed' : 'pointer'
+            }}
           >
-            Send Message
+            {status === 'sending' ? 'Sending...' : 'Send Message'}
           </motion.button>
+
+          {status === 'success' && (
+            <p style={{ color: 'green', marginTop: '15px', fontSize: '0.9rem', textAlign: 'center' }}>
+              Message sent successfully! We will get back to you soon.
+            </p>
+          )}
+          {status === 'error' && (
+            <p style={{ color: 'red', marginTop: '15px', fontSize: '0.9rem', textAlign: 'center' }}>
+              Oops! Something went wrong. Please try again later.
+            </p>
+          )}
         </form>
       </motion.div>
     </section>
   )
 }
+
+

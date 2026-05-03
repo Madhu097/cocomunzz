@@ -12,6 +12,17 @@ const images = [
 export default function Gallery() {
   return (
     <section className="gallery-section">
+      <div className="section-header">
+        <motion.h2 
+          className="section-title"
+          initial={{ opacity: 0, x: -30 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          viewport={{ once: true }}
+          style={{ fontSize: '3rem', lineHeight: '1.2' }}
+        >
+          Our Gallery
+        </motion.h2>
+      </div>
       <motion.div 
         className="gallery-bento"
         initial={{ opacity: 0, y: 30 }}

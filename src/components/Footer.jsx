@@ -13,7 +13,7 @@ export default function Footer() {
           <div className="footer-contact-info" style={{ fontSize: '0.85rem', color: 'rgba(255,255,255,0.8)' }}>
             <span>+91 78160 28882</span>
             <span style={{ margin: '0 10px' }}>•</span>
-            <span>hello@cocomunzz.com</span>
+            <span>business@cocomunzzz.com</span>
           </div>
         </div>
         <div className="footer-links">
@@ -34,8 +34,8 @@ export default function Footer() {
           <a href="https://firstlook.digital/" target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none', fontWeight: 'bold' }}>
             <span style={{ color: '#FFA500' }}>F</span>
             <span style={{ color: '#000000' }}>1</span>
-            <span style={{ color: '#FFA500' }}>rst</span>
-            <span style={{ color: '#000000' }}>look</span>
+            <span style={{ color: '#FFA500' }}>RST</span>
+            <span style={{ color: '#000000' }}>LOOK</span>
           </a>
         </div>
       </div>

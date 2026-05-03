@@ -182,6 +182,7 @@ body {
   align-items: center;
   padding: 100px clamp(60px, 15vw, 220px);
   position: relative;
+  overflow: hidden;
 }
 
 .hero-content {
@@ -258,6 +259,8 @@ body {
 .features {
   padding: 100px clamp(60px, 15vw, 220px);
   background: var(--white);
+  position: relative;
+  overflow: hidden;
 }
 
 .features-grid {
@@ -295,6 +298,8 @@ body {
 .menu-section {
   padding: 100px clamp(60px, 15vw, 220px);
   background: var(--light-bg);
+  position: relative;
+  overflow: hidden;
 }
 
 .section-header {
@@ -368,6 +373,8 @@ body {
   align-items: center;
   gap: 80px;
   background: #ffffff;
+  position: relative;
+  overflow: hidden;
 }
 
 .about-img-wrapper {
@@ -425,6 +432,7 @@ body {
   padding: 100px clamp(60px, 15vw, 220px);
   background: var(--creama);
   position: relative;
+  overflow: hidden;
 }
 
 .testimonial-grid {
@@ -474,6 +482,8 @@ body {
 .gallery-section {
   padding: 80px clamp(60px, 15vw, 220px);
   background: #ffffff;
+  position: relative;
+  overflow: hidden;
 }
 
 .gallery-bento {
@@ -528,6 +538,8 @@ body {
   background: var(--creama);
   display: flex;
   gap: 80px;
+  position: relative;
+  overflow: hidden;
 }
 
 .contact-left {
