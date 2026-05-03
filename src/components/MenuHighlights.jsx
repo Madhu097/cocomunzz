@@ -26,7 +26,7 @@ export default function MenuHighlights() {
           style={{ fontSize: '2.5rem', lineHeight: '1.2' }}
         >
           A few creations that have made<br />
-          Cocomunzzz impossible to forget.
+          Cocomunzz impossible to forget.
         </motion.h2>
         <a href="#" className="view-all">View Full Menu →</a>
       </div>

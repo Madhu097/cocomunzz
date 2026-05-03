@@ -7,7 +7,7 @@ export default function Footer() {
         <div className="footer-info">
           <div className="footer-logo" style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
             <img src={asset('images/Logo.png')} alt="Cocomunzzz Logo" style={{ height: '55px', width: 'auto', filter: 'brightness(0) invert(1)' }} />
-            <span style={{ fontSize: '1.4rem' }}>Cocomunzzz</span>
+            <span style={{ fontSize: '1.6rem', fontFamily: 'var(--font-display)', letterSpacing: '1px' }}>Cocomunzzz</span>
           </div>
           <p style={{ fontSize: '0.85rem' }}>India&rsquo;s First Coconut Café | Crafted with Love</p>
         </div>

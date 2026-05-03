@@ -46,7 +46,7 @@ export default function Navbar() {
         {/* Logo */}
         <a href="#home" className="navbar-logo-ref" onClick={closeMenu} style={{ display: 'flex', alignItems: 'center', gap: '15px' }}>
           <img src={asset('images/Logo.png')} alt="Cocomunzzz Logo" style={{ height: '65px', width: 'auto' }} />
-          <span style={{ fontSize: '1.7rem', fontWeight: '400', fontFamily: 'var(--font-main)', color: 'var(--grove)' }}>Cocomunzzz</span>
+          <span style={{ fontSize: '1.7rem', fontWeight: '400', fontFamily: 'var(--font-main)', color: 'var(--grove)' }}>Cocomunzz</span>
         </a>
 
         {/* Right side Container */}

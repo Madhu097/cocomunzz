@@ -1,10 +1,17 @@
-@import url('https://fonts.googleapis.com/css2?family=Archivo:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Archivo:wght@300;400;500;600;700&family=Tenor+Sans&family=Righteous&display=swap');
 
 @font-face {
-  font-family: 'Aquatic';
-  src: url('/fonts/Aquatic.woff2') format('woff2'),
-       url('/fonts/Aquatic.ttf') format('truetype');
-  font-weight: normal;
+  font-family: 'Aquavit';
+  src: url('/fonts/aquavit/aquavit-regular.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Aquavit';
+  src: url('/fonts/aquavit/aquavit-bold.otf') format('opentype');
+  font-weight: 700;
   font-style: normal;
   font-display: swap;
 }
@@ -18,7 +25,8 @@
   --cacao-bark: #2C1212;
   --white: #FFFFFF;
   --light-bg: #FBF3E0;
-  --font-main: 'Aquatic', 'Pacifico', cursive;
+  --font-main: 'Aquavit', 'Tenor Sans', sans-serif;
+  --font-display: 'Righteous', cursive; /* Retros alternative */
   --font-body: 'Archivo', sans-serif;
   --transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -440,14 +448,6 @@ body {
 .testimonial-text {
   font-style: italic;
   color: #444;
-}
-
-.toast-decor {
-  position: absolute;
-  top: 40px;
-  right: 60px;
-  width: 100px;
-  opacity: 0.1;
 }
 
 /* Gallery Collage */

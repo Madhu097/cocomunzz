@@ -1,4 +1,5 @@
 import { motion } from 'framer-motion'
+import { asset } from '../utils/assetPath'
 
 const reviews = [
   {
@@ -21,18 +22,18 @@ const reviews = [
   },
 ]
 
-const ToastIcon = () => (
-  <svg className="toast-decor" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <path d="M20 30C20 25 25 20 30 20H70C75 20 80 25 80 30V70C80 75 75 80 70 80H30C25 80 20 75 20 70V30Z" stroke="currentColor" strokeWidth="2"/>
-    <path d="M30 40C30 38 32 36 34 36H66C68 36 70 38 70 40V60C70 62 68 64 66 64H34C32 64 30 62 30 60V40Z" fill="currentColor" opacity="0.2"/>
-  </svg>
-)
-
 export default function Testimonials() {
   return (
-    <section className="testimonials">
-      <ToastIcon />
-      <div className="section-header">
+    <section className="testimonials" style={{ position: 'relative', overflow: 'hidden' }}>
+      {/* Moved elements to corners to avoid overlapping title */}
+      <div className="bg-element" style={{ top: '10%', left: '-50px', width: '280px', opacity: 0.07 }}>
+        <img src={asset('images/elements/3.png')} alt="" />
+      </div>
+      <div className="bg-element" style={{ bottom: '-40px', right: '-30px', width: '220px', opacity: 0.07, transform: 'rotate(10deg)' }}>
+        <img src={asset('images/elements/5.png')} alt="" />
+      </div>
+
+      <div className="section-header" style={{ position: 'relative', zIndex: 2 }}>
         <motion.h2 
           className="section-title"
           initial={{ opacity: 0, y: 30 }}
@@ -41,10 +42,10 @@ export default function Testimonials() {
         >
           What Our Guests<br />Are Saying
         </motion.h2>
-        <span style={{ fontSize: '5rem', color: 'var(--creama)', opacity: 0.5, fontFamily: 'serif' }}>“</span>
+        <span style={{ fontSize: '5rem', color: '#e8cea7', opacity: 0.2, fontFamily: 'serif' }}>“</span>
       </div>
 
-      <div className="testimonial-grid">
+      <div className="testimonial-grid" style={{ position: 'relative', zIndex: 2 }}>
         {reviews.map((r, i) => (
           <motion.div 
             className="testimonial-card" 
@@ -57,7 +58,7 @@ export default function Testimonials() {
           >
             <div className="testimonial-header">
               <div className="avatar">{r.initial}</div>
-              <span style={{ fontWeight: 700 }}>{r.name}</span>
+              <span style={{ fontWeight: 400 }}>{r.name}</span>
             </div>
             <div className="stars">
               {'★'.repeat(r.stars)}
