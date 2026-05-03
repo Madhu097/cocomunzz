@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
+import { asset } from '../utils/assetPath'
 
 export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false)
@@ -43,14 +44,9 @@ export default function Navbar() {
         transition={{ duration: 0.6 }}
       >
         {/* Logo */}
-        <a href="#home" className="navbar-logo-ref" onClick={closeMenu}>
-          <div className="logo-icon-ref">
-            <svg viewBox="0 0 24 24" fill="currentColor">
-              <circle cx="12" cy="12" r="10" opacity="0.15"/>
-              <path d="M12 3C7.03 3 3 7.03 3 12s4.03 9 9 9 9-4.03 9-9-4.03-9-9-9zm0 4a3 3 0 110 6 3 3 0 010-6zm0 12.2a6.5 6.5 0 01-5-2.35C7.03 15.8 9.33 15 12 15s4.97.8 5 1.85A6.5 6.5 0 0112 19.2z"/>
-            </svg>
-          </div>
-          <span>Cocomunzzz</span>
+        <a href="#home" className="navbar-logo-ref" onClick={closeMenu} style={{ display: 'flex', alignItems: 'center', gap: '15px' }}>
+          <img src={asset('images/Logo.png')} alt="Cocomunzzz Logo" style={{ height: '65px', width: 'auto' }} />
+          <span style={{ fontSize: '1.7rem', fontWeight: '400', fontFamily: 'var(--font-main)', color: 'var(--grove)' }}>Cocomunzzz</span>
         </a>
 
         {/* Right side Container */}

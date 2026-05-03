@@ -1,9 +1,14 @@
+import { asset } from '../utils/assetPath'
+
 export default function Footer() {
   return (
     <footer className="footer" style={{ marginTop: 0 }}>
       <div className="footer-top" style={{ marginBottom: '30px' }}>
         <div className="footer-info">
-          <div className="footer-logo">Cocomunzzz</div>
+          <div className="footer-logo" style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
+            <img src={asset('images/Logo.png')} alt="Cocomunzzz Logo" style={{ height: '55px', width: 'auto', filter: 'brightness(0) invert(1)' }} />
+            <span style={{ fontSize: '1.4rem' }}>Cocomunzzz</span>
+          </div>
           <p style={{ fontSize: '0.85rem' }}>India&rsquo;s First Coconut Café | Crafted with Love</p>
         </div>
         <div className="footer-links">
