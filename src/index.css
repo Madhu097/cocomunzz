@@ -340,6 +340,7 @@ body {
   display: flex;
   align-items: center;
   gap: 80px;
+  background: #ffffff;
 }
 
 .about-img-wrapper {
@@ -406,11 +407,11 @@ body {
 }
 
 .testimonial-card {
-  background: var(--white);
-  box-shadow: 0 10px 30px rgba(0,0,0,0.03);
+  background: #ffffff;
   padding: 40px;
   border-radius: 24px;
   position: relative;
+  box-shadow: 0 15px 35px rgba(0,0,0,0.06);
 }
 
 .testimonial-header {
@@ -452,10 +453,8 @@ body {
 
 /* Gallery Collage */
 .gallery-section {
-  padding: 40px 120px 80px;
-  max-width: none;
-  margin: 0;
-  background: var(--white);
+  padding: 80px 120px;
+  background: #ffffff;
 }
 
 .gallery-grid {
