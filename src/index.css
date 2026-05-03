@@ -90,7 +90,7 @@ body {
   gap: 12px;
   color: var(--white);
   font-size: 1.1rem;
-  font-weight: 500;
+  font-weight: 400;
   text-decoration: none;
 }
 
@@ -160,7 +160,7 @@ body {
   font-size: clamp(2.8rem, 5.5vw, 4.5rem);
   line-height: 1.1;
   margin-bottom: 30px;
-  font-weight: 700;
+  font-weight: 400;
 }
 
 .title-highlight {
@@ -256,6 +256,7 @@ body {
   font-size: 1.8rem;
   margin-bottom: 12px;
   color: var(--grove);
+  font-weight: 400;
 }
 
 .feature-card p {
@@ -281,6 +282,7 @@ body {
   font-family: var(--font-main);
   font-size: 3.5rem;
   color: var(--grove);
+  font-weight: 400;
 }
 
 .view-all {
@@ -330,6 +332,7 @@ body {
   font-family: var(--font-main);
   color: var(--white);
   font-size: 2.2rem;
+  font-weight: 400;
 }
 
 /* About Section */
@@ -363,6 +366,7 @@ body {
   font-size: 3.5rem;
   line-height: 1.1;
   margin-bottom: 30px;
+  font-weight: 400;
 }
 
 .about-content p {
@@ -490,6 +494,7 @@ body {
   color: var(--creama);
   font-size: 3.5rem;
   margin-bottom: 30px;
+  font-weight: 400;
 }
 
 .contact-details {
@@ -565,7 +570,7 @@ body {
 .footer-logo {
   color: var(--creama);
   font-size: 1.5rem;
-  font-weight: 700;
+  font-weight: 400;
   margin-bottom: 20px;
 }
 
@@ -606,22 +611,187 @@ body {
   animation: float 4s ease-in-out infinite;
 }
 
-/* Responsive */
-@media (max-width: 1024px) {
-  .hero, .about-section, .contact-section {
-    flex-direction: column;
-    padding: 60px 40px;
-  }
-  .features-grid, .menu-grid, .testimonial-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
+/* ===== HAMBURGER ===== */
+.hamburger-btn {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 8px;
+  border-radius: 8px;
+  z-index: 1100;
 }
 
-@media (max-width: 768px) {
-  .navbar { padding: 20px 30px; }
-  .navbar-links { display: none; }
-  .features-grid, .menu-grid, .testimonial-grid, .gallery-grid {
-    grid-template-columns: 1fr;
+.bar {
+  display: block;
+  width: 26px;
+  height: 2.5px;
+  background: var(--creama);
+  border-radius: 4px;
+  transform-origin: center;
+}
+
+.navbar-right-ref {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+/* ===== MOBILE DRAWER ===== */
+.mobile-menu {
+  position: fixed;
+  top: 70px;
+  left: 0;
+  right: 0;
+  z-index: 1050;
+  background: var(--grove);
+  border-bottom: 1px solid rgba(255,255,255,0.07);
+  padding: 24px 32px 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+}
+
+.mobile-link {
+  color: var(--creama);
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: 500;
+  padding: 14px 0;
+  border-bottom: 1px solid rgba(255,255,255,0.06);
+  display: block;
+  transition: color 0.2s;
+}
+
+.mobile-link:hover { color: var(--white); }
+
+.mobile-cta {
+  display: inline-block;
+  margin-top: 20px;
+  background: var(--leaf);
+  color: var(--white);
+  text-decoration: none;
+  padding: 14px 32px;
+  border-radius: 50px;
+  font-weight: 700;
+  font-size: 1rem;
+  text-align: center;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 1024px) {
+  /* Navbar */
+  .hamburger-btn { display: flex; }
+  .desktop-only { display: none !important; }
+  .navbar-ref { padding: 16px 32px; }
+
+  /* Hero */
+  .hero {
+    flex-direction: column;
+    padding: 110px 40px 60px;
+    min-height: auto;
+    gap: 50px;
+    text-align: center;
   }
-  .hero h1 { font-size: 3.5rem; }
+  .hero-content { flex: none; width: 100%; }
+  .hero-title-main { font-size: clamp(2.4rem, 7vw, 3.5rem); }
+  .hero-desc { max-width: 100%; margin: 0 auto 40px; }
+  .hero-images-ref { flex: none; width: 100%; justify-content: center; }
+  .hero-img-container { width: 100%; max-width: 520px; }
+  .swash-halo { width: 100px; }
+  .swash-wavy { width: 140px; }
+
+  /* Features */
+  .features { padding: 60px 40px; }
+  .features-grid { grid-template-columns: repeat(2, 1fr); gap: 30px; }
+
+  /* Menu */
+  .menu-section { padding: 60px 40px; }
+  .menu-grid { grid-template-columns: repeat(2, 1fr); }
+  .menu-item-card { height: 350px; }
+
+  /* About */
+  .about-section {
+    flex-direction: column;
+    padding: 60px 40px;
+    gap: 40px;
+  }
+  .about-img-wrapper { flex: none; width: 100%; max-width: 500px; margin: 0 auto; }
+  .about-content { flex: none; width: 100%; }
+
+  /* Testimonials */
+  .testimonials { padding: 60px 40px; }
+  .testimonial-grid { grid-template-columns: repeat(2, 1fr); }
+
+  /* Gallery */
+  .gallery-section { padding: 40px 40px 60px; }
+  .gallery-grid {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 200px);
+  }
+
+  /* Contact */
+  .contact-section {
+    flex-direction: column;
+    padding: 60px 40px 40px;
+    gap: 40px;
+  }
+  .contact-right { padding: 40px; }
+}
+
+@media (max-width: 640px) {
+  /* Navbar */
+  .navbar-ref { padding: 14px 20px; }
+
+  /* Hero */
+  .hero { padding: 90px 24px 50px; gap: 40px; }
+  .hero-title-main { font-size: clamp(2rem, 9vw, 2.8rem); }
+
+  /* Features */
+  .features { padding: 50px 24px; }
+  .features-grid { grid-template-columns: 1fr; gap: 24px; }
+  .feature-card h3 { font-size: 1.4rem; }
+
+  /* Menu */
+  .menu-section { padding: 50px 24px; }
+  .section-header { flex-direction: column; align-items: flex-start; gap: 16px; }
+  .menu-grid { grid-template-columns: 1fr; }
+  .menu-item-card { height: 280px; }
+
+  /* About */
+  .about-section { padding: 50px 24px; }
+  .about-content h2 { font-size: 2.4rem; }
+
+  /* Testimonials */
+  .testimonials { padding: 50px 24px; }
+  .testimonial-grid { grid-template-columns: 1fr; }
+  .section-header { flex-direction: column; align-items: flex-start; }
+
+  /* Gallery */
+  .gallery-section { padding: 30px 24px 50px; }
+  .gallery-grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+  }
+  .gallery-item { height: 220px; }
+  .gallery-item[style] { grid-column: auto !important; grid-row: auto !important; }
+
+  /* Contact */
+  .contact-section { padding: 50px 24px 30px; }
+  .contact-left h2 { font-size: 2.4rem; }
+  .contact-right { padding: 28px 20px; }
+
+  /* Footer */
+  .footer { padding: 30px 24px 24px; }
+  .footer-top { flex-direction: column; gap: 24px; }
+  .footer-bottom { flex-direction: column; gap: 12px; font-size: 0.75rem; }
+  .footer-links ul { gap: 16px; flex-wrap: wrap; }
+
+  /* FAB */
+  .fab { bottom: 24px; right: 20px; width: 50px; height: 50px; }
 }
