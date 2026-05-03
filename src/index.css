@@ -60,6 +60,18 @@ body {
   padding: 0 clamp(40px, 10vw, 150px);
 }
 
+.bg-element {
+  position: absolute;
+  pointer-events: none;
+  z-index: 0;
+  opacity: 0.2;
+}
+
+.bg-element img {
+  width: 100%;
+  height: auto;
+}
+
 /* Announcement Bar */
 .announcement-bar {
   background: var(--andhra-clay);

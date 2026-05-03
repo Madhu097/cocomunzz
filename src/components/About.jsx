@@ -3,7 +3,14 @@ import { asset } from '../utils/assetPath'
 
 export default function About() {
   return (
-    <section className="about-section" id="about">
+    <section className="about-section" id="about" style={{ position: 'relative', overflow: 'hidden' }}>
+      <div className="bg-element" style={{ top: '10%', right: '-50px', width: '350px', opacity: 0.12 }}>
+        <img src={asset('images/elements/5.png')} alt="" />
+      </div>
+      <div className="bg-element" style={{ bottom: '10%', left: '5%', width: '120px', opacity: 0.1 }}>
+        <img src={asset('images/elements/6.png')} alt="" />
+      </div>
+
       <motion.div 
         className="about-img-wrapper"
         initial={{ opacity: 0, x: -50 }}

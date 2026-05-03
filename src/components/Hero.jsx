@@ -4,6 +4,9 @@ import { asset } from '../utils/assetPath'
 export default function Hero() {
   return (
     <section className="hero" id="home">
+      <div className="bg-element" style={{ bottom: '-50px', left: '-50px', width: '400px', opacity: 0.15 }}>
+        <img src={asset('images/elements/1.png')} alt="" />
+      </div>
       <motion.div 
         className="hero-content"
         initial={{ opacity: 0, x: -50 }}

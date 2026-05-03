@@ -1,8 +1,16 @@
 import { motion } from 'framer-motion'
+import { asset } from '../utils/assetPath'
 
 export default function Contact() {
   return (
-    <section className="contact-section" id="contact">
+    <section className="contact-section" id="contact" style={{ position: 'relative', overflow: 'hidden' }}>
+      <div className="bg-element" style={{ bottom: '-30px', left: '-50px', width: '300px', opacity: 0.1 }}>
+        <img src={asset('images/elements/2.png')} alt="" />
+      </div>
+      <div className="bg-element" style={{ top: '5%', right: '10%', width: '150px', opacity: 0.08, transform: 'rotate(45deg)' }}>
+        <img src={asset('images/elements/4.png')} alt="" />
+      </div>
+
       <motion.div 
         className="contact-left"
         initial={{ opacity: 0, y: 30 }}
@@ -10,7 +18,7 @@ export default function Contact() {
         viewport={{ once: true }}
       >
         <h2>Quick Order /<br />Contact</h2>
-        <p style={{ color: 'rgba(232, 206, 167, 0.6)' }}>
+        <p>
           Whether you&rsquo;re placing a bulk order or just want to say hello, we&rsquo;d love to hear from you. Reach out through any of the channels below.
         </p>
         

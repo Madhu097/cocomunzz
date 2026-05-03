@@ -9,7 +9,14 @@ const menuItems = [
 
 export default function MenuHighlights() {
   return (
-    <section className="menu-section" id="menu">
+    <section className="menu-section" id="menu" style={{ position: 'relative', overflow: 'hidden' }}>
+      <div className="bg-element" style={{ top: '-30px', left: '10%', width: '150px', opacity: 0.1, transform: 'rotate(-10deg)' }}>
+        <img src={asset('images/elements/6.png')} alt="" />
+      </div>
+      <div className="bg-element" style={{ bottom: '-50px', right: '5%', width: '300px', opacity: 0.1 }}>
+        <img src={asset('images/elements/3.png')} alt="" />
+      </div>
+
       <div className="section-header">
         <motion.h2 
           className="section-title"

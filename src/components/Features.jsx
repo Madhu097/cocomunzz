@@ -1,4 +1,5 @@
 import { motion } from 'framer-motion'
+import { asset } from '../utils/assetPath'
 
 const features = [
   {
@@ -47,7 +48,14 @@ const features = [
 
 export default function Features() {
   return (
-    <section className="features">
+    <section className="features" style={{ position: 'relative', overflow: 'hidden' }}>
+      <div className="bg-element" style={{ top: '-40px', right: '-40px', width: '200px', opacity: 0.1, transform: 'rotate(15deg)' }}>
+        <img src={asset('images/elements/4.png')} alt="" />
+      </div>
+      <div className="bg-element" style={{ bottom: '-60px', left: '-20px', width: '180px', opacity: 0.08, transform: 'rotate(-20deg)' }}>
+        <img src={asset('images/elements/4.png')} alt="" />
+      </div>
+      
       <div className="features-grid">
         {features.map((f, i) => (
           <motion.div 
