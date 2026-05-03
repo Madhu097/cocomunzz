@@ -57,7 +57,7 @@ body {
 .container {
   max-width: 1400px;
   margin: 0 auto;
-  padding: 0 80px;
+  padding: 0 clamp(40px, 10vw, 150px);
 }
 
 /* Announcement Bar */
@@ -80,7 +80,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 20px 60px;
+  padding: 20px clamp(40px, 10vw, 180px);
   background: var(--creama);
   border-bottom: 1px solid rgba(0,0,0,0.05);
 }
@@ -139,7 +139,7 @@ body {
   min-height: 100vh;
   display: flex;
   align-items: center;
-  padding: 100px 120px;
+  padding: 100px clamp(60px, 15vw, 220px);
   position: relative;
   overflow: hidden;
 }
@@ -229,7 +229,7 @@ body {
 
 /* Features Section */
 .features {
-  padding: 100px 60px;
+  padding: 100px clamp(60px, 15vw, 220px);
   background: var(--white);
 }
 
@@ -266,7 +266,7 @@ body {
 
 /* Menu Section */
 .menu-section {
-  padding: 100px 120px;
+  padding: 100px clamp(60px, 15vw, 220px);
   background: var(--light-bg);
 }
 
@@ -336,7 +336,7 @@ body {
 
 /* About Section */
 .about-section {
-  padding: 120px 120px;
+  padding: 120px clamp(60px, 15vw, 220px);
   display: flex;
   align-items: center;
   gap: 80px;
@@ -395,7 +395,7 @@ body {
 
 /* Testimonials */
 .testimonials {
-  padding: 100px 120px;
+  padding: 100px clamp(60px, 15vw, 220px);
   background: var(--creama);
   position: relative;
 }
@@ -453,7 +453,7 @@ body {
 
 /* Gallery Collage */
 .gallery-section {
-  padding: 80px 120px;
+  padding: 80px clamp(60px, 15vw, 220px);
   background: #ffffff;
 }
 
@@ -479,7 +479,7 @@ body {
 
 /* Contact Section */
 .contact-section {
-  padding: 100px 120px 40px;
+  padding: 100px clamp(60px, 15vw, 220px) 40px;
   background: var(--creama);
   display: flex;
   gap: 80px;
@@ -495,6 +495,13 @@ body {
   font-size: 3.5rem;
   margin-bottom: 30px;
   font-weight: 400;
+}
+
+.contact-left p {
+  color: var(--grove);
+  opacity: 0.8;
+  font-size: 1.1rem;
+  line-height: 1.6;
 }
 
 .contact-details {
