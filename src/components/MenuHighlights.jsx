@@ -1,9 +1,10 @@
 import { motion } from 'framer-motion'
+import { asset } from '../utils/assetPath'
 
 const menuItems = [
-  { img: '/images/espresso-creations.png', title: 'Coconut Coffee Range' },
-  { img: '/images/signature-cupcakes.png', title: 'Coconut Pudding' },
-  { img: '/images/brunch-treats.png', title: 'Coconut Gelato' },
+  { img: asset('images/espresso-creations.png'), title: 'Coconut Coffee Range' },
+  { img: asset('images/signature-cupcakes.png'), title: 'Coconut Pudding' },
+  { img: asset('images/brunch-treats.png'), title: 'Coconut Gelato' },
 ]
 
 export default function MenuHighlights() {

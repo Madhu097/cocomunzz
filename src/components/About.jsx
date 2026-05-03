@@ -1,4 +1,5 @@
 import { motion } from 'framer-motion'
+import { asset } from '../utils/assetPath'
 
 export default function About() {
   return (
@@ -10,7 +11,7 @@ export default function About() {
         transition={{ duration: 0.8 }}
         viewport={{ once: true }}
       >
-        <img src="/images/about-bakery-1.png" alt="Cocomunzzz Cafe" className="about-img" />
+        <img src={asset('images/about-bakery-1.png')} alt="Cocomunzzz Cafe" className="about-img" />
       </motion.div>
 
       <motion.div 
@@ -45,7 +46,7 @@ export default function About() {
           </motion.li>
         </ul>
         <motion.button 
-          className="navbar-cta"
+          className="navbar-cta-ref"
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.95 }}
           style={{ padding: '16px 40px', fontSize: '1rem' }}
