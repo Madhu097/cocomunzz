@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion'
 import { asset } from '../utils/assetPath'
+import aboutImg from '../assets/2 frame copy.jpg'
 
 export default function About() {
   return (
@@ -15,7 +16,7 @@ export default function About() {
         transition={{ duration: 0.8 }}
         viewport={{ once: true }}
       >
-        <img src={asset('images/about_cocomunzz_1777830741247.png')} alt="Cocomunzzz Cafe" className="about-img" />
+        <img src={aboutImg} alt="Cocomunzzz Cafe" className="about-img" />
       </motion.div>
 
       <motion.div 
