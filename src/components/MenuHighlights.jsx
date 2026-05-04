@@ -17,7 +17,7 @@ export default function MenuHighlights() {
   return (
     <section className="menu-section" id="menu" style={{ position: 'relative', overflow: 'hidden' }}>
       <div className="bg-element" style={{ bottom: '-50px', right: '-60px', width: '300px', opacity: 0.1, margin: 0 }}>
-        <img src={asset('images/elements/3.png')} alt="" style={{ margin: 0, display: 'block' }} />
+        <img src={asset('images/elements/3.png')} alt="" style={{ margin: 0, display: 'block' }} loading="lazy" decoding="async" />
       </div>
 
       <div className="section-header">
@@ -55,7 +55,7 @@ export default function MenuHighlights() {
             viewport={{ once: true }}
             whileHover={{ y: -10 }}
           >
-            <img src={item.img} alt={item.title} />
+            <img src={item.img} alt={item.title} loading="lazy" decoding="async" />
             <div className="menu-item-overlay">
               <motion.h3
                 initial={{ y: 20, opacity: 0 }}

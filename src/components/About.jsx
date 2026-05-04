@@ -6,7 +6,7 @@ export default function About() {
   return (
     <section className="about-section" id="about" style={{ position: 'relative', overflow: 'hidden' }}>
       <div className="bg-element" style={{ bottom: '5%', right: '-60px', width: '350px', opacity: 0.12, margin: 0 }}>
-        <img src={asset('images/elements/2.png')} alt="" style={{ margin: 0, display: 'block' }} />
+        <img src={asset('images/elements/2.png')} alt="" style={{ margin: 0, display: 'block' }} loading="lazy" decoding="async" />
       </div>
 
       <motion.div 
@@ -16,7 +16,7 @@ export default function About() {
         transition={{ duration: 0.8 }}
         viewport={{ once: true }}
       >
-        <img src={aboutImg} alt="Cocomunzzz Cafe" className="about-img" />
+        <img src={aboutImg} alt="Cocomunzzz Cafe" className="about-img" loading="lazy" decoding="async" />
       </motion.div>
 
       <motion.div 

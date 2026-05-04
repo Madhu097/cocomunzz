@@ -261,6 +261,8 @@ body {
   background: var(--white);
   position: relative;
   overflow: hidden;
+  content-visibility: auto; /* Performance boost */
+  contain-intrinsic-size: 1px 300px;
 }
 
 .features-grid {
@@ -300,6 +302,8 @@ body {
   background: var(--light-bg);
   position: relative;
   overflow: hidden;
+  content-visibility: auto; /* Performance boost */
+  contain-intrinsic-size: 1px 600px;
 }
 
 .section-header {
@@ -375,6 +379,8 @@ body {
   background: #ffffff;
   position: relative;
   overflow: hidden;
+  content-visibility: auto; /* Performance boost */
+  contain-intrinsic-size: 1px 500px;
 }
 
 .about-img-wrapper {
@@ -675,6 +681,7 @@ body {
 
 .float-anim {
   animation: float 4s ease-in-out infinite;
+  backface-visibility: hidden; /* Smoother animation */
 }
 
 /* ===== HAMBURGER ===== */

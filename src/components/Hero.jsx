@@ -6,7 +6,7 @@ export default function Hero() {
   return (
     <section className="hero" id="home" style={{ position: 'relative' }}>
       <div className="bg-element" style={{ bottom: '-50px', left: '-60px', width: '400px', opacity: 0.15, margin: 0 }}>
-        <img src={asset('images/elements/1.png')} alt="" style={{ margin: 0, display: 'block' }} />
+        <img src={asset('images/elements/1.png')} alt="" style={{ margin: 0, display: 'block' }} loading="lazy" decoding="async" />
       </div>
 
       <motion.div 
@@ -44,7 +44,7 @@ export default function Hero() {
         viewport={{ once: true }}
       >
         <div className="hero-img-container">
-          <img src={heroImg} alt="Coconut Creations" className="hero-img-ref" />
+          <img src={heroImg} alt="Coconut Creations" className="hero-img-ref" fetchpriority="high" decoding="async" />
           <div className="dots-pattern-ref">
             <svg width="150" height="150" viewBox="0 0 150 150">
               {Array.from({ length: 8 }).map((_, i) => 
