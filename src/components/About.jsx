@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion'
 import { asset } from '../utils/assetPath'
-import aboutImg from '../assets/2 frame copy.jpg'
+import aboutImg from '../assets/P1021437.JPG'
 
 export default function About() {
   return (

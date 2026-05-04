@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion'
 import { asset } from '../utils/assetPath'
+import heroImg from '../assets/2 frame copy.jpg'
 
 export default function Hero() {
   return (
@@ -43,7 +44,7 @@ export default function Hero() {
         viewport={{ once: true }}
       >
         <div className="hero-img-container">
-          <img src={asset('images/hero-bakery.png')} alt="Coconut Creations" className="hero-img-ref" />
+          <img src={heroImg} alt="Coconut Creations" className="hero-img-ref" />
           <div className="dots-pattern-ref">
             <svg width="150" height="150" viewBox="0 0 150 150">
               {Array.from({ length: 8 }).map((_, i) => 
