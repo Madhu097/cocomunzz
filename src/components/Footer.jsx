@@ -7,7 +7,7 @@ export default function Footer() {
       <div className="footer-top" style={{ marginBottom: '30px' }}>
         <div className="footer-info">
           <div className="footer-logo" style={{ display: 'flex', alignItems: 'center' }}>
-            <img src={logoImg} alt="Cocomunzz Logo" style={{ height: '65px', width: 'auto', filter: 'brightness(0) invert(1)' }} />
+            <img src={logoImg} alt="Cocomunzzz Logo" style={{ height: '65px', width: 'auto', filter: 'brightness(0) invert(1)' }} />
           </div>
           <p style={{ fontSize: '0.85rem', marginBottom: '8px' }}>India&rsquo;s First Coconut Café | Crafted with Love</p>
           <div className="footer-contact-info" style={{ fontSize: '0.85rem', color: 'rgba(255,255,255,0.8)' }}>
@@ -27,7 +27,7 @@ export default function Footer() {
       </div>
       <div className="footer-bottom" style={{ paddingTop: '20px', alignItems: 'center' }}>
         <div className="footer-copyright" style={{ fontSize: '0.8rem' }}>
-          &copy; 2026 Cocomunzz. All rights reserved.
+          &copy; 2026 Cocomunzzz. All rights reserved.
         </div>
         <div className="footer-credit" style={{ fontSize: '0.8rem' }}>
           Designed and Developed by{' '}

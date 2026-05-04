@@ -23,7 +23,7 @@ export default function Hero() {
           </h1>
         </div>
         <p className="hero-desc">
-          From the milk in our coffee to the sweetness in our desserts, from handcrafted gelatos to comforting plates—every creation at Cocomunzz 
+          From the milk in our coffee to the sweetness in our desserts, from handcrafted gelatos to comforting plates—every creation at Cocomunzzz 
           begins with coconut, made to be shared, remembered, and returned to.
         </p>
         <motion.button 
@@ -31,7 +31,7 @@ export default function Hero() {
           whileHover={{ scale: 1.05, backgroundColor: "#D4B991" }}
           whileTap={{ scale: 0.95 }}
         >
-          Explore Cocomunzz
+          Explore Cocomunzzz
         </motion.button>
       </motion.div>
 

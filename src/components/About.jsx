@@ -15,7 +15,7 @@ export default function About() {
         transition={{ duration: 0.8 }}
         viewport={{ once: true }}
       >
-        <img src={asset('images/about_cocomunzz_1777830741247.png')} alt="Cocomunzz Cafe" className="about-img" />
+        <img src={asset('images/about_cocomunzz_1777830741247.png')} alt="Cocomunzzz Cafe" className="about-img" />
       </motion.div>
 
       <motion.div 
@@ -25,9 +25,9 @@ export default function About() {
         transition={{ duration: 0.8 }}
         viewport={{ once: true }}
       >
-        <h2>About Cocomunzz</h2>
+        <h2>About Cocomunzzz</h2>
         <p>
-          Cocomunzz - India&rsquo;s first coconut café is reimagining the products you love through the endless possibilities of coconut. What started with curiosity, purpose, and a love for coconut continues to grow into something people can taste, share, and connect with.
+          Cocomunzzz - India&rsquo;s first coconut café is reimagining the products you love through the endless possibilities of coconut. What started with curiosity, purpose, and a love for coconut continues to grow into something people can taste, share, and connect with.
         </p>
         <ul className="about-features">
           <motion.li initial={{ opacity: 0, x: 20 }} whileInView={{ opacity: 1, x: 0 }} transition={{ delay: 0.2 }}>

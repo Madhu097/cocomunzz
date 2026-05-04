@@ -23,7 +23,7 @@ const features = [
       </svg>
     ),
     title: 'Sweet Creations',
-    desc: 'Puddings, gelatos, cookies, and desserts made the Cocomunzz way.',
+    desc: 'Puddings, gelatos, cookies, and desserts made the Cocomunzzz way.',
   },
   {
     icon: (

@@ -38,7 +38,7 @@ export default function MenuHighlights() {
             viewport={{ once: true }}
             style={{ fontSize: '1.2rem', color: '#666', lineHeight: '1.6', fontFamily: 'var(--font-body)' }}
           >
-            A few creations that have made cocomunzz impossible to forget.
+            A few creations that have made cocomunzzz impossible to forget.
           </motion.p>
         </div>
         <a href="#" className="view-all">View Full Menu →</a>

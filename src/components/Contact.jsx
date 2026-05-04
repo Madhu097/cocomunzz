@@ -80,7 +80,7 @@ export default function Contact() {
       >
         <form className="contact-form" onSubmit={handleSubmit}>
           {/* Optional config for FormSubmit */}
-          <input type="hidden" name="_subject" value="New Cocomunzz Contact Form Submission!" />
+          <input type="hidden" name="_subject" value="New Cocomunzzz Contact Form Submission!" />
           <input type="hidden" name="_template" value="table" />
           
           <div className="form-group">

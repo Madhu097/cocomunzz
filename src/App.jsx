@@ -5,7 +5,7 @@ import Features from './components/Features'
 import MenuHighlights from './components/MenuHighlights'
 import About from './components/About'
 import Testimonials from './components/Testimonials'
-import Gallery from './components/Gallery'
+// import Gallery from './components/Gallery'
 import Contact from './components/Contact'
 import Footer from './components/Footer'
 
@@ -37,7 +37,7 @@ function App() {
       <MenuHighlights />
       <About />
       <Testimonials />
-      <Gallery />
+      {/* <Gallery /> */}
       <Contact />
       <Footer />
 
