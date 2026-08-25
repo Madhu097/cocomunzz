@@ -41,18 +41,6 @@ function App() {
       <Contact />
       <Footer />
 
-      <motion.div 
-        className="fab"
-        initial={{ opacity: 0, scale: 0 }}
-        whileInView={{ opacity: 1, scale: 1 }}
-        whileHover={{ scale: 1.1, backgroundColor: '#99432B' }}
-        whileTap={{ scale: 0.9 }}
-        onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
-      >
-        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round">
-          <polyline points="18 15 12 9 6 15"></polyline>
-        </svg>
-      </motion.div>
     </div>
   )
 }
